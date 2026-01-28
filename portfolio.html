@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | KHUSHALI DESIGN STUDIO</title>
+    <meta name="description" content="Explore our portfolio of stunning interior design projects - Residential, Commercial, and Hospitality spaces transformed.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/creative.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body class="loading">
+
+    <!-- Preloader with Rotating 3D Logo -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="logo-3d-container">
+                <img src="assets/images/logo-3d.png" alt="KHUSHALI DESIGN STUDIO" class="logo-3d">
+            </div>
+            <div class="preloader-progress-container">
+                <div class="preloader-percentage">0%</div>
+                <div class="preloader-bar">
+                    <div class="preloader-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor">
+        <span class="cursor-text">VIEW</span>
+    </div>
+    <div class="cursor-follower"></div>
+
+    <!-- Fullscreen Menu Overlay -->
+    <div class="fullscreen-menu">
+        <div class="fullscreen-menu-inner">
+            <div class="fullscreen-menu-content">
+                <nav class="fullscreen-nav">
+                    <ul class="fullscreen-menu-links">
+                        <li><a href="index.html" class="fullscreen-link" data-text="Home"><span>Home</span></a></li>
+                        <li><a href="about.html" class="fullscreen-link" data-text="About"><span>About</span></a></li>
+                        <li><a href="services.html" class="fullscreen-link" data-text="Services"><span>Services</span></a></li>
+                        <li><a href="portfolio.html" class="fullscreen-link active" data-text="Portfolio"><span>Portfolio</span></a></li>
+                        <li><a href="contact.html" class="fullscreen-link" data-text="Contact"><span>Contact</span></a></li>
+                    </ul>
+                </nav>
+                <div class="fullscreen-menu-info">
+                    <div class="fullscreen-contact">
+                        <h4>Get In Touch</h4>
+                        <p>hello@khushalidesign.com</p>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    <div class="fullscreen-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo-3d.png" alt="KHUSHALI" class="logo-img">
+                <span class="logo-text">KHUSHALI<span>.</span></span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <a href="contact.html" class="nav-cta">
+                <span>Get Quote</span>
+            </a>
+
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg">
+            <img src="assets/images/project-3.jpg" alt="Our Portfolio">
+        </div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Our <span>Portfolio</span></h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Portfolio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Work</span>
+                <h2 class="section-title">Inspiring <span>Transformations</span></h2>
+            </div>
+
+            <div class="portfolio-filter-wrapper">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+            </div>
+
+            <div class="portfolio-main-grid">
+                <div class="portfolio-item gallery-item tall" data-category="residential">
+                    <img src="assets/images/project-1.jpg" alt="Modern Minimalist Villa">
+                    <div class="portfolio-overlay gallery-overlay">
+                        <span>Residential</span>
+                        <h4>Modern Minimalist Villa</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item gallery-item" data-category="commercial">
+                    <img src="assets/images/project-2.jpg" alt="Tech Startup Office">
+                    <div class="portfolio-overlay gallery-overlay">
+                        <span>Commercial</span>
+                        <h4>Tech Startup Office</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item gallery-item" data-category="hospitality">
+                    <img src="assets/images/project-3.jpg" alt="Boutique Hotel Lobby">
+                    <div class="portfolio-overlay gallery-overlay">
+                        <span>Hospitality</span>
+                        <h4>Boutique Hotel Lobby</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item gallery-item wide" data-category="residential">
+                    <img src="assets/images/project-4.jpg" alt="Penthouse Suite">
+                    <div class="portfolio-overlay gallery-overlay">
+                        <span>Residential</span>
+                        <h4>Penthouse Suite</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item gallery-item tall" data-category="commercial">
+                    <img src="assets/images/project-5.jpg" alt="Fine Dining Restaurant">
+                    <div class="portfolio-overlay gallery-overlay">
+                        <span>Commercial</span>
+                        <h4>Fine Dining Restaurant</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item gallery-item" data-category="hospitality">
+                    <img src="assets/images/project-6.jpg" alt="Luxury Spa Resort">
+                    <div class="portfolio-overlay gallery-overlay">
+                        <span>Hospitality</span>
+                        <h4>Luxury Spa Resort</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item gallery-item" data-category="residential">
+                    <img src="assets/images/gallery-1.jpg" alt="Contemporary Living Room">
+                    <div class="portfolio-overlay gallery-overlay">
+                        <span>Residential</span>
+                        <h4>Contemporary Living Room</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item gallery-item wide" data-category="commercial">
+                    <img src="assets/images/gallery-3.jpg" alt="Corporate Headquarters">
+                    <div class="portfolio-overlay gallery-overlay">
+                        <span>Commercial</span>
+                        <h4>Corporate Headquarters</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item gallery-item" data-category="hospitality">
+                    <img src="assets/images/gallery-4.jpg" alt="Resort Suite">
+                    <div class="portfolio-overlay gallery-overlay">
+                        <span>Hospitality</span>
+                        <h4>Resort Suite</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item gallery-item" data-category="residential">
+                    <img src="assets/images/gallery-5.jpg" alt="Modern Kitchen">
+                    <div class="portfolio-overlay gallery-overlay">
+                        <span>Residential</span>
+                        <h4>Modern Kitchen</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item gallery-item" data-category="commercial">
+                    <img src="assets/images/gallery-6.jpg" alt="Retail Showroom">
+                    <div class="portfolio-overlay gallery-overlay">
+                        <span>Commercial</span>
+                        <h4>Retail Showroom</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item gallery-item" data-category="residential">
+                    <img src="assets/images/gallery-7.jpg" alt="Master Bedroom">
+                    <div class="portfolio-overlay gallery-overlay">
+                        <span>Residential</span>
+                        <h4>Master Bedroom</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project -->
+    <section class="featured-project">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Spotlight</span>
+                <h2 class="section-title">Featured <span>Project</span></h2>
+            </div>
+
+            <div class="featured-project-grid">
+                <div class="featured-project-image reveal-left">
+                    <img src="assets/images/project-1.jpg" alt="Modern Minimalist Villa">
+                </div>
+                <div class="featured-project-content reveal-right">
+                    <h3>Modern Minimalist Villa</h3>
+                    <p>
+                        This stunning 5,000 sq ft villa in the heart of Mumbai showcases our signature
+                        approach to modern minimalism. The design seamlessly blends indoor and outdoor
+                        living, featuring floor-to-ceiling windows, natural materials, and a carefully
+                        curated color palette that creates a sense of calm and sophistication.
+                    </p>
+                    <div class="project-details">
+                        <div class="project-detail">
+                            <span>Location</span>
+                            <strong>Mumbai, India</strong>
+                        </div>
+                        <div class="project-detail">
+                            <span>Area</span>
+                            <strong>5,000 sq ft</strong>
+                        </div>
+                        <div class="project-detail">
+                            <span>Style</span>
+                            <strong>Modern Minimalist</strong>
+                        </div>
+                        <div class="project-detail">
+                            <span>Duration</span>
+                            <strong>8 Months</strong>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">
+                        <span>Start Similar Project</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Have a Project in Mind?</h2>
+            <p>Let's collaborate to create your dream space. We're ready to transform your vision into reality.</p>
+            <a href="contact.html" class="btn btn-primary">
+                <span>Get in Touch</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo-3d.png" alt="KHUSHALI" class="footer-logo-img">
+                        <span class="logo-text">KHUSHALI<span>.</span></span>
+                    </a>
+                    <p class="footer-text">
+                        Creating extraordinary living spaces that inspire, comfort, and elevate
+                        everyday life through innovative design.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Residential Design</a></li>
+                        <li><a href="services.html">Commercial Spaces</a></li>
+                        <li><a href="services.html">Furniture Design</a></li>
+                        <li><a href="services.html">Space Planning</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p class="footer-text">Subscribe for design tips and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 KHUSHALI DESIGN STUDIO. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close">&times;</button>
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+            <img src="" alt="Lightbox Image" class="lightbox-image">
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/creative.js"></script>
+
+</body>
+</html>
