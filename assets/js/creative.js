@@ -5,36 +5,44 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // ========================================
-    // Preloader with Progress
+    // Preloader with Progress (first visit only)
     // ========================================
     const preloader = document.querySelector('.preloader');
     const preloaderProgress = document.querySelector('.preloader-progress');
     const preloaderPercentage = document.querySelector('.preloader-percentage');
-    let progress = 0;
 
-    const preloaderInterval = setInterval(() => {
-        progress += Math.random() * 10;
-        if (progress >= 100) {
-            progress = 100;
-            clearInterval(preloaderInterval);
+    if (preloader && sessionStorage.getItem('preloaderShown')) {
+        // Already shown this session — skip preloader immediately
+        preloader.remove();
+        document.body.classList.remove('loading');
+        initGSAPAnimations();
+    } else {
+        let progress = 0;
+        const preloaderInterval = setInterval(() => {
+            progress += Math.random() * 10;
+            if (progress >= 100) {
+                progress = 100;
+                clearInterval(preloaderInterval);
 
-            setTimeout(() => {
-                if (preloader) {
-                    preloader.classList.add('hidden');
-                    document.body.classList.remove('loading');
-                }
-                // Initialize GSAP animations after preloader
-                initGSAPAnimations();
-            }, 500);
-        }
+                setTimeout(() => {
+                    if (preloader) {
+                        preloader.classList.add('hidden');
+                        document.body.classList.remove('loading');
+                    }
+                    sessionStorage.setItem('preloaderShown', 'true');
+                    // Initialize GSAP animations after preloader
+                    initGSAPAnimations();
+                }, 500);
+            }
 
-        if (preloaderProgress) {
-            preloaderProgress.style.width = progress + '%';
-        }
-        if (preloaderPercentage) {
-            preloaderPercentage.textContent = Math.floor(progress) + '%';
-        }
-    }, 100);
+            if (preloaderProgress) {
+                preloaderProgress.style.width = progress + '%';
+            }
+            if (preloaderPercentage) {
+                preloaderPercentage.textContent = Math.floor(progress) + '%';
+            }
+        }, 100);
+    }
 
     // ========================================
     // Enhanced Custom Cursor with Text Labels
@@ -645,6 +653,33 @@ document.addEventListener('DOMContentLoaded', function() {
             card.addEventListener('mouseleave', function() {
                 this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
             });
+        });
+    }
+
+    // ========================================
+    // Cookie Consent Banner
+    // ========================================
+    const cookieConsent = document.getElementById('cookieConsent');
+    const cookieAccept = document.getElementById('cookieAccept');
+    const cookieDecline = document.getElementById('cookieDecline');
+
+    if (cookieConsent && !localStorage.getItem('cookieConsent')) {
+        setTimeout(function() {
+            cookieConsent.classList.add('active');
+        }, 1000);
+    }
+
+    if (cookieAccept) {
+        cookieAccept.addEventListener('click', function() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            cookieConsent.classList.remove('active');
+        });
+    }
+
+    if (cookieDecline) {
+        cookieDecline.addEventListener('click', function() {
+            localStorage.setItem('cookieConsent', 'declined');
+            cookieConsent.classList.remove('active');
         });
     }
 

@@ -18,7 +18,14 @@
       "Bash(done)",
       "Bash(do curl -L -o \"partner-$i.png\" \"https://demo2.themelexus.com/antra/wp-content/uploads/2025/06/logo-0$i.png\")",
       "Bash(npx serve -p 3000)",
-      "Bash(npx serve -l 3000)"
+      "Bash(npx serve -l 3000)",
+      "Bash(cd:*)",
+      "Bash(tree:*)",
+      "Bash(dir:*)",
+      "Bash(git -C \"D:\\\\GitHub\\\\khushalidesigns\" log --oneline)",
+      "Bash(findstr:*)",
+      "Bash(npx:*)",
+      "Bash(timeout:*)"
     ]
   }
 }

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KHUSHALI DESIGN STUDIO | Premium Interior Design</title>
     <meta name="description" content="Transform your space with KHUSHALI DESIGN STUDIO - Award-winning interior design studio creating extraordinary living spaces.">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    <link rel="icon" type="image/png" href="assets/images/logo-3d.png">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -648,31 +650,34 @@
                 </div>
 
                 <div class="contact-form glass-card">
-                    <form>
+                    <form id="contact-form">
+                        <input type="hidden" name="access_key" value="04f4a022-cae4-42f7-ac6e-9fb36abe250c">
+                        <input type="hidden" name="subject" value="New Contact from Khushali Design Studio Website">
+                        <input type="hidden" name="from_name" value="Khushali Design Studio">
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" id="name" placeholder=" " required>
+                                <input type="text" id="name" name="name" placeholder=" " required>
                                 <label for="name">Your Name</label>
                             </div>
                             <div class="form-group">
-                                <input type="email" id="email" placeholder=" " required>
+                                <input type="email" id="email" name="email" placeholder=" " required>
                                 <label for="email">Email Address</label>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="tel" id="phone" placeholder=" ">
+                                <input type="tel" id="phone" name="phone" placeholder=" ">
                                 <label for="phone">Phone Number</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="subject" placeholder=" ">
+                                <input type="text" id="subject" name="subject" placeholder=" ">
                                 <label for="subject">Subject</label>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <textarea id="message" rows="5" placeholder=" " required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
                             <label for="message">Your Message</label>
                         </div>
 
@@ -747,6 +752,17 @@
         </div>
     </footer>
 
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your browsing experience. By continuing to use this site, you agree to our use of cookies.</p>
+            <div class="cookie-actions">
+                <button class="cookie-btn cookie-decline" id="cookieDecline">Decline</button>
+                <button class="cookie-btn cookie-accept" id="cookieAccept">Accept</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Back to Top Button -->
     <button class="back-to-top">
         <i class="fas fa-arrow-up"></i>
@@ -759,6 +775,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script src="assets/js/creative.js"></script>
+
+    <!-- Contact Form -->
+    <script src="assets/js/contact-form.js"></script>
 
 </body>
 </html>
